@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calculator">
+            <div>
+                <label class="switch">
+                    <input type="checkbox" id="switch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <h1>CALCULATOR</h1>
+            <i class="fa fa-history" style="font-size:30px; color: white"></i>
+            <!-- <input type="number" id="display"> -->
+            <div class="input" id="display"></div>
+        </div>
+        
+        <div class="buttons">
+            <button onclick="appendSymbol('(')">(</button>
+            <button onclick="appendSymbol(')')">)</button>
+            <div class="special">
+                <button onclick="clearresult()">C</button>
+                <button onclick="clearresult()">CE</button>
+            </div>
+            <button onclick="appendSymbol('%')">%</button>
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendSymbol('*')">X</button>
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendSymbol('-')">-</button>
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="appendSymbol('+')">+</button>
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="appendNumber('.')">.</button>
+            <button onclick="appendSymbol('/')">/</button>
+            <button class="green" onclick="calculate()">=</button>
+        </div>
+        <div class="footer">
+            <h4>
+                Made with 
+                <i class="fa fa-heart" style="font-size:15px;color:white"></i>
+                by
+                <span>Naman Pancholi</span>
+            </h4>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
